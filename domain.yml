@@ -1,0 +1,89 @@
+actions:
+- action_end
+- action_hello_world
+- action_maths_add_numbers
+- action_maths_divide_numbers
+- action_maths_multiply_numbers
+- action_maths_subtract_numbers
+- utter_cheer_up
+- utter_default
+- utter_did_that_help
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_i_am_user
+- utter_iamabot
+
+entities:
+- bottype
+- number
+- username
+- health_check_mood
+- health_check_sleepyness
+- health_check_aches
+- health_check_exercisetoday
+
+forms:
+- health_check_form
+
+intents:
+- health_check_start
+- maths_add_numbers
+- maths_divide_numbers
+- hello_world
+- maths_subtract_numbers
+- maths_multiply_numbers
+- mood_unhappy
+- affirm
+- deny
+- mood_great
+- greet
+- goodbye
+- bot_challenge
+- i_am_user
+
+responses:
+  utter_ask_mood:
+  - text: "how would you describe your mood?"
+  utter_ask_sleepyness:
+  - text: "Do you feel sleepy?"
+  utter_ask_aches:
+  - text: "Does your body ache?"
+  utter_ask_exercisetoday:
+  - text: "Have you done exercise today?"
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_default:
+  - text: I didn't understand. Please try again.
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye
+  utter_greet:
+  - text: Hey! How are you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_i_am_user:
+  - text: Hi there {username}
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
+slots:
+  bottype:
+    type: text
+  result:
+    type: unfeaturized
+  username:
+    type: text
+  health_check_mood:
+    type: unfeaturized
+  health_check_sleepyness:
+    type: unfeaturized
+  health_check_aches:
+    type: unfeaturized
+  health_check_exercisetoday:
+    type: unfeaturized
+  
