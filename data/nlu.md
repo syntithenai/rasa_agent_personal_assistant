@@ -13,7 +13,7 @@
 - [I'm good](health_check_mood:happy)
 - [sad](health_check_mood:unhappy)
 - [very sad](health_check_mood:unhappy)
-- [unhappy](health_check_mood:unhappy)
+- [unhappy](health_check_mood)
 - [bad](health_check_mood:unhappy)
 - [very bad](health_check_mood:unhappy)
 - [awful](health_check_mood:unhappy)
@@ -27,9 +27,9 @@
 ## intent:health_check_sleepyness
 - [tired](health_check_sleepyness:sleepy)
 - [weary](health_check_sleepyness:sleepy)
-- [sleepy](health_check_sleepyness:sleepy)
+- [sleepy](health_check_sleepyness)
 - i am [tired](health_check_sleepyness:sleepy)
-- [alert](health_check_sleepyness:alert)
+- [alert](health_check_sleepyness)
 - [awake](health_check_sleepyness:alert)
 - i feel [fine](health_check_sleepyness:alert)
 
@@ -45,11 +45,6 @@
 - i went for a [bike](health_check_exercisetoday) ride
 - i went for a [swim](health_check_exercisetoday)
 - i went outside for a [walk](health_check_exercisetoday)
-
-
-
-
-
 
 ## intent:maths_add_numbers
 - what is [1](number) plus [2](number)
@@ -186,20 +181,63 @@
 
 ## synonym:2
 - to
-- too
 - by two
+- too
 
 ## synonym:3
 - by three
 
 ## synonym:4
 - for
+- four
 
 ## synonym:5
 - five
 
+## synonym:7.2
+- seven point two
+
 ## synonym:8
 - ate
+
+## synonym:alert
+- fine
+- awake
+
+## synonym:happy
+- amazing
+- very good
+- perfect
+- I'm good
+- I am great
+- great
+- I am feeling very good
+- wonderful
+
+## synonym:no
+- i feel great
+- no problems
+
+## synonym:sleepy
+- weary
+- tired
+
+## synonym:unhappy
+- very bad
+- not very good
+- bad
+- so sad
+- i feel sad
+- extremely sad
+- very sad
+- sad
+- help me
+- terrible
+- awful
+
+## synonym:yes
+- i hurt
+- everything aches
 
 ## regex:number
 - [0-9]*

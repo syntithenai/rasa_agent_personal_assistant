@@ -3,7 +3,7 @@
   - health_check_form
   - form{"name": "health_check_form"}
   - form{"name": null}
-  
+
 ## hello world
 * hello_world
   - utter_greet
@@ -18,7 +18,7 @@
 * maths_add_numbers
   - action_maths_add_numbers
   - slot{"result": "3"}
-  
+
 ## subtract numbers
 * maths_subtract_numbers
   - action_maths_subtract_numbers
@@ -28,7 +28,7 @@
 * maths_multiply_numbers
   - action_maths_multiply_numbers
   - slot{"result": "3"}
-  
+
 ## divide numbers
 * maths_divide_numbers
   - action_maths_divide_numbers
@@ -39,7 +39,7 @@
   - utter_greet
 * mood_great
   - utter_happy
-  
+
 ## sad path 1
 * greet
   - utter_greet
@@ -48,7 +48,7 @@
   - utter_did_that_help
 * affirm
   - utter_happy
-  
+
 ## sad path 2
 * greet
   - utter_greet
@@ -58,7 +58,7 @@
 * deny
   - utter_goodbye
   - action_end
-  
+
 ## say goodbye
 * goodbye
   - utter_goodbye
@@ -67,7 +67,6 @@
 ## bot challenge
 * bot_challenge
   - utter_iamabot
- 
 
 ## interactive_story_1
 * mood_unhappy
@@ -101,6 +100,3 @@
 * maths_add_numbers{"number": "7.2"}
     - action_maths_add_numbers
     - slot{"result": "8"}
-    
-    
-    
